@@ -2,6 +2,22 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
+
+/* Prueba*/
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Slab:wght@100..900&display=swap');
+
+h1, h2, h3 {
+    font-family: 'Roboto Slab', serif;
+}
+
+
+p, span, a {
+    font-family: 'Hepta Slab';
+}
+
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,6 +29,7 @@ body {
     background: linear-gradient(to right, rgb(255, 228, 230), rgb(204, 251, 241));
     padding-top: 60px; 
 }
+
 
 /*Estilos para hacer un slpash screen con palabras*/
         /* Estilos del splash screen */
@@ -122,7 +139,7 @@ main {
 /* 2.1 Estilos de la portada */
 .cover {
     height: 548px;
-    background: url(/img/Principal/Fondo.jpeg) center center/cover no-repeat; /* Imagen de fondo de portada */
+    background: url(/img/Principal/Engalanamiento.jpg) center center/cover no-repeat; /* Imagen de fondo de portada */
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
@@ -136,7 +153,6 @@ main {
         height: 400px;
         border: 1px solid #032172;
         border-radius: 10px;
-        box-shadow: 0 4px 8px #032172 ;
     }
 
             .live:hover {
@@ -154,7 +170,7 @@ main {
 /* 2.2 Estilos de las Cartas */
 .div-card {
     background-color: #fff;
-    padding: 20px;
+    padding: 40px;
     margin: 15px 50px;
     border: 1px solid #a3a2a2;
     box-shadow: 0px 4px 8px #000;
@@ -162,19 +178,19 @@ main {
 }
     /* 2.2.1 Estilo del Titulo */
     .title-cards {
-        margin: 0 40px 20px 40px;
-        border-bottom: 5px solid #000 ;
-        padding-left: 10px ;
+        margin: 0 40px 20px 0;
+        /* border-bottom: 5px solid #000 ; */
         padding-bottom: 2px;
         width: 250px;
-        transition: 2s ease;
+        font-size: 20px;
+        /* transition: 2s ease; */
     }
 
-            .title-cards:hover {
+            /* .title-cards:hover {
                 transition: 1s ease;
                 width: 90%;
                 font-size: 1.1rem;
-            }
+            } */
         
     /* 2.2.2 Estilo del Contenedor de todas las cartas */
     .container-card {
@@ -183,6 +199,7 @@ main {
         gap: 20px; /* Espacio entre las tarjetas */
         max-width: 1100px;
         margin: auto;
+
     }
 
         /* Selector de las Cartas */
@@ -214,8 +231,8 @@ main {
         }
 
         .card .content-card {
-            padding: 15px;
-            text-align: center;
+            padding: 30px;
+            text-align: justify;
         }
 
             .card .content-card h3 {
@@ -230,7 +247,7 @@ main {
                 margin-bottom: 5px;
             }
 
-            .card .content-card a {
+            /* .card .content-card a {
                 display: inline-block;
                 padding: 10px;
                 margin-top: 10px;
@@ -245,7 +262,7 @@ main {
                 .card .content-card a:hover {
                     background: #2fb4cc;
                     color: #fff;
-                }
+                } */
 
 /* Estilo para el pie de página */
 footer {
@@ -402,21 +419,7 @@ footer {
         grid-template-columns: auto auto;
     }
 
-    .title-cards {
-        margin: 5% 0 7% 0 ;
-        border-bottom: 5px solid #252525 ;
-        padding-left: 10px ;
-        padding-bottom: 2px;
-        width: 250px;
-        transition: 2s ease;
-    }
     
-            .title-cards:hover {
-                transition: 1s ease;
-                width: 90%;
-                font-size: 1.1rem;
-            }
-
     h1.estilo {
         padding: 10px;
         margin: 0 50px;
