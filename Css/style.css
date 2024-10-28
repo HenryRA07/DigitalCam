@@ -122,15 +122,56 @@ main {
 /* 2.1 Estilos de la portada */
 .cover {
     height: 548px;
-    background: url(/img/Principal/Fondo.jpeg) center center/cover no-repeat; /* Imagen de fondo de portada */
+    background: url(/img/Principal/Engalanamiento.jpg) center center/cover no-repeat; /* Imagen de fondo de portada */
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-size: auto;
 }
 
-    .live {
+    .title-cover {
+        background: rgba(0,0,0,.4);
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        text-shadow: 2px 2px 1px #323232;
+        color: #dfd6c1;
+    }
+
+    .title-cover h1 {
+        font-size: 3rem;
+    }
+
+    .title-cover h3 {
+        font-size: 2rem;
+    }
+
+    .btn-cover {
+        background-color: #154360;
+        border-radius: 10px;
+        border: 1px solid #11374f45;
+        padding: 12px;
+        color: #dfd6c1;
+        text-shadow: 2px 2px 5px #000;
+        margin: 20px;
+        transition: all 0.9s;
+    }
+
+        .btn-cover:hover {
+            background-color: #143d56;
+            color: #d0dce3;
+            text-shadow: 2px 2px 5px #07131b;
+            transition: all .35s ;
+            transform: scale(1.05);
+            box-shadow: 0 0  5px #000;
+        }
+
+    /*  .live {
         background: #777d80;
         width: 600px;
         height: 400px;
@@ -148,7 +189,7 @@ main {
             height: 100%;
             border: none;
             border-radius: 10px;
-        }
+        } */
 
     
 /* 2.2 Estilos de las Cartas */
