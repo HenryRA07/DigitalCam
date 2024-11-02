@@ -23,10 +23,7 @@
 
         <!-- Splash Screen -->
         <div id="splash">
-            <video id="splash-video" autoplay muted p|laysinline>
-                <source src="/img/splash-screen/Splash Screen.mp4" type="video/mp4">
-                Tu navegador no soporta el video.
-            </video>
+            <video id="splash-video" autoplay muted playsinline src="/img/splash-screen/Splash Screen.mp4" type="video/mp4"></video>
         </div>
 
         <!-- Barra De Navegación -->
@@ -54,13 +51,25 @@
 
             <!-- Portada  -->
             <div class="cover" id="portada">
-                <div class="live">
-                    <iframe src="https://www.youtube.com/embed/MEULo6p5VdQ" 
-                    title="LATINA EN VIVO: NOTICIAS DEL PERÚ - JUEVES 12 DE SEPTIEMBRE DE 2024" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" 
-                    allowfullscreen
-                    class="iframe-live"></iframe>
+                <div class="title-cover">
+
+                    <!--  Titulo  -->
+                    <h1 class="title">DigitalCam</h1>
+
+                        <!--  linea divisora  -->
+                        <hr class="line-cover">
+
+                    <!--  Eslogan  -->
+                    <p class="slogan">
+                        <i>Narrando el presente, construyendo el futuro</i>
+                    </p>
+
+                    
+                    <!--  Boton de Enlace a mas informacion  -->
+                    <button class="btn">
+                        Conoce Más
+                    </button>
+
                 </div>
             </div>
             
@@ -68,6 +77,17 @@
 
             <!-- Seccion de Cartas -->
             <div class="div-card">
+
+                <!-- Titulo de seccion de video  -->
+                <div class="title-cards">
+                    <h2>Presentación</h2>
+                </div>
+
+                <!-- Video de Youtube -->
+                <div class="video">
+                    <video src="/img/Principal/Video de Presentación.mp4" class="iframe-video" autoplay controls></video>
+                </div>
+
 
                 <!-- Titulo de Sección de Cartas -->
                 <div class="title-cards">
