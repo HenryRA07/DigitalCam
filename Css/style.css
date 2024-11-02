@@ -10,7 +10,7 @@
 }
 
 body {
-    background: linear-gradient(to right, rgb(255, 228, 230), rgb(204, 251, 241));
+    background: linear-gradient(to right, rgb(255, 253, 228), rgb(204, 233, 251));
     padding-top: 60px; 
 }
 
@@ -121,7 +121,7 @@ main {
 
 /* 2.1 Estilos de la portada */
 .cover {
-    height: 548px;
+    height: 620px;
     background: url(/img/Principal/Engalanamiento.jpg) center center/cover no-repeat; /* Imagen de fondo de portada */
     background-attachment: fixed;
     display: flex;
@@ -139,23 +139,30 @@ main {
     justify-content: center;
     height: 100%;
     width: 100%;
-    text-shadow: 2px 2px 1px #323232;
+    text-shadow: 5px 3px 5px #785e14;
     color: #dfd6c1;
 }
 
     .title {
         font-size: 5rem;
         text-align: center;
-        color: #ffffff;
+        color: #f2ead2;
+        
         /* font-family: 'Nunito'; */
+    }
+
+    .line-cover {
+        margin: 15px auto 0px auto;
+        border: 1px solid #f3e2b5;
+        width: 60px;
     }
 
     .slogan {
         text-align: center;
         color: #ffffff;
-        /* font-family: 'Nunito'; */
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         padding: 20px;
+        text-align-last: auto;
     }
 
     .btn {
@@ -206,27 +213,6 @@ main {
             box-shadow: 0 0  5px #000;
         }
 
-    .video {
-        background: #777d80;
-        width: 600px;
-        height: 400px;
-        border: 1px solid #000000;
-        border-radius: 10px;
-        display: flex;
-    }
-
-            .video:hover {
-                transition: all 1s ease;
-            }
-
-        .iframe-video {
-            width:  100%;
-            height: 100%;
-            border: none;
-            border-radius: 10px;
-        }
-
-    
 /* 2.2 Estilos de las Cartas */
 .div-card {
     background-color: #fff;
@@ -247,11 +233,41 @@ main {
     }
 
             .title-cards:hover {
-                transition: 1s ease;
+                transition: width 1s ease;
                 width: 90%;
                 font-size: 1.1rem;
             }
         
+            .video {
+                background: #777d803f;
+                width: 80%;
+                height: 80%;
+                border: 1px solid #0000003b;
+                border-radius: 10px;
+                display: flex;
+                margin: 25px auto;
+                transition: all 1s ;
+            }
+        
+            .video:hover {
+                box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+                transform: translateY(-3%);
+            }
+        
+                    .video:hover {
+                        transition: all 1s ease;
+                        
+                    }
+        
+                .iframe-video {
+                    width:  100%;
+                    height: 100%;
+                    border: none;
+                    border-radius: 10px;
+                    
+                }
+        
+            
     /* 2.2.2 Estilo del Contenedor de todas las cartas */
     .container-card {
         display: grid;
@@ -454,7 +470,7 @@ footer {
     }
 
     .cover {
-        height: 600px;
+        height: 620px;
     }
 
     .live {
@@ -463,7 +479,6 @@ footer {
         height: 400px;
         border: 3px solid #464646;
     }
-        
 
     .contenido {
         padding: 20px;

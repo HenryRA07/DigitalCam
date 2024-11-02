@@ -41,8 +41,8 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="Index.html">Inicio</a></li>
-                    <li><a href="Html/Deportes.html">Deportes</a></li>
-                    <li><a href="Html/Eventos.html">Eventos</a></li>
+                    <li><a href="#deportes">Deportes</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
                 </ul>
             </nav>
         
@@ -58,9 +58,10 @@
                 <div class="title-cover">
                     <!--  Titulo  -->
                     <h1 class="title">DigitalCam</h1>
+                    <hr class="line-cover">
                     <!--  Eslogan  -->
                     <p class="slogan">
-                        Narrando el presente, construyendo el futuro
+                        <i>"Narrando el presente, construyendo el futuro"</i>
                     </p>
                     <!--  Boton de Enlace a mas informacion  -->
                     <button class="btn">
@@ -75,9 +76,13 @@
             <section class="div-card">
 
                     <!-- Video de Youtube -->
-                    <h2 class="title-cards">Presentación</h2>
+                    <div class="title-cards">
+                        <h2>Quienes Somos?</h2>
+                    </div>
+
                     <div class="video">
-                        <iframe src="https://www.youtube.com/embed/MEULo6p5VdQ" title="video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" class="iframe-video"></iframe>
+                        <video src="/img/Principal/Video de Presentación.mp4" class="iframe-video" autoplay controls></video>
+                        <!-- <iframe src="https://www.youtube.com/embed/q7KXe5fbB_M" title="Video de Presentación - DigitalCam" class="iframe-video" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
                     </div>
                     <!-- Titulo de Sección de Cartas -->
                     <div class="title-cards">
@@ -199,9 +204,9 @@
                     <br>
             </section>
 
-            <iframe src="Html/Deportes.html"  height="1160px" width="100%" frameborder="0"></iframe>
+            <iframe src="Html/Deportes.html" id="deportes"  height="1160px" width="100%" frameborder="0"></iframe>
 
-            <iframe src="Html/Eventos.html"  height="1735px" width="100%" frameborder="0"></iframe>
+            <iframe src="Html/Eventos.html" id="eventos"  height="1735px" width="100%" frameborder="0"></iframe>
 
         </main>
 
