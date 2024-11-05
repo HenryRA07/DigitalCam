@@ -79,7 +79,20 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo span {
+    color: #eceff1;
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+    text-shadow: 2px 2px 3px #0d0d0d;
+}
+
 .header .logo img {
+    
     height: 50px;
     width: 50px;
     transition: all 0.3s;
