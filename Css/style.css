@@ -1,7 +1,19 @@
-/* 1. General Styles */
-@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+/* 1.- Tipografia */
+@import url("https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Slab:wght@100..900&display=swap");
 
+h1,
+h2,
+h3 {
+  font-family: "Roboto Slab", serif;
+}
+p,
+span,
+a {
+  font-family: "Hepta Slab";
+}
+
+/* 2.- Estilos básicos */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,7 +26,7 @@ body {
   padding-top: 60px;
 }
 
-/*Estilos para hacer un slpash screen con palabras*/
+/* Estilos para hacer un slpash screen con palabras */
 /* Estilos del splash screen */
 #splash {
   position: fixed;
