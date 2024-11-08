@@ -237,9 +237,10 @@ main {
 
 /* Estilos de Video de Youtube */
 .video {
+  padding-top: 5px;
   background: #777d803f;
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
   border: 1px solid #0000003b;
   border-radius: 10px;
   display: flex;
