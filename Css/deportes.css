@@ -69,72 +69,73 @@ body {
   display: block;
 }
 
-/* 1. Estilo para el encabezado */
+/* 1.Estilos de Encabezado o NavBar */
 .header {
-  background-color: #154360; /* Establece el color de fondo del encabezado */
-  display: flex; /* Utiliza un diseño flexible */
-  justify-content: space-between; /* Distribuye el espacio entre los elementos hijos */
-  align-items: center; /* Alinea verticalmente los elementos al centro */
-  height: 60px; /* Establece la altura del encabezado */
-  padding: 0 50px; /* Añade relleno horizontal */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #154360;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 50px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 3px 8px #000;
 }
 
-/* Estilo para el encabezado fijo */
-.header .fixed {
-  position: fixed; /* Fija la posición del encabezado */
-  top: 0; /* Lo coloca en la parte superior */
-  left: 0; /* Lo alinea a la izquierda */
-  width: 100%; /* Ocupa todo el ancho disponible */
-  z-index: 1000; /* Asegura que esté por encima de otros elementos */
-}
-
-/* Estilo para el logo en el encabezado */
 .header .logo {
-  cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el logo */
+  display: flex;
+  align-items: center;
 }
 
-/* Estilo para la imagen del logo */
+.header .logo span {
+  color: #eceff1;
+  font-size: 1.2rem;
+  padding-bottom: 5px;
+  text-shadow: 2px 2px 3px #0d0d0d;
+}
+
 .header .logo img {
-  height: 50px; /* Establece la altura de la imagen */
-  width: 50px; /* Establece el ancho de la imagen */
-  transition: all 0.3s; /* Añade una transición suave para todos los cambios */
+  height: 50px;
+  width: 50px;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 
-/* Efecto al pasar el ratón sobre la imagen del logo */
 .header .logo img:hover {
   transition: all 1s ease;
-  transform: scale(1.2); /* Aumenta el tamaño de la imagen al 120% */
-  display: flex; /* Cambia el tipo de visualización a flexible */
+  transform: scale(1.3);
 }
 
-/* Estilo para los enlaces de navegación */
 .header .nav-links {
-  list-style: none; /* Elimina los marcadores de lista */
+  list-style: none;
 }
 
-/* Estilo para los elementos de la lista de navegación */
 .header .nav-links li {
-  display: inline-block; /* Muestra los elementos en línea */
-  padding: 0 15px; /* Añade relleno horizontal */
+  display: inline-block;
+  padding: 0 15px;
 }
 
-/* Efecto al pasar el ratón sobre los elementos de la lista */
 .header .nav-links li:hover {
   transition: all 1s ease;
-  transform: scale(1.1); /* Aumenta ligeramente el tamaño del elemento */
+  transform: scale(1.1);
 }
 
-/* Estilo para los enlaces dentro de la lista de navegación */
 .header .nav-links a {
-  color: #eceff1; /* Establece el color del texto */
-  text-decoration: none; /* Elimina el subrayado del enlace */
+  color: #eceff1;
+  text-decoration: none;
 }
 
-/* Efecto al pasar el ratón sobre los enlaces */
 .header .nav-links li a:hover {
-  color: #ffbc0e; /* Cambia el color del texto al pasar el ratón */
+  color: #ffbc0e;
 }
 
+main {
+  margin-top: 70px;
+}
 /*Estilo de la Primera Sección*/
 .first-section {
   background-color: #fff;

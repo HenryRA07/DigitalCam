@@ -69,32 +69,40 @@ body {
   display: block;
 }
 
-/*1.  Estilo para el encabezado */
+/* 1.Estilos de Encabezado o NavBar */
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   background-color: #154360;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 60px;
   padding: 0 50px;
-}
-
-.header.fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 3px 8px #000;
 }
 
 .header .logo {
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.header .logo span {
+  color: #eceff1;
+  font-size: 1.2rem;
+  padding-bottom: 5px;
+  text-shadow: 2px 2px 3px #0d0d0d;
 }
 
 .header .logo img {
   height: 50px;
   width: 50px;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .header .logo img:hover {
@@ -117,7 +125,7 @@ body {
 }
 
 .header .nav-links a {
-  color: #ffffff;
+  color: #eceff1;
   text-decoration: none;
 }
 
