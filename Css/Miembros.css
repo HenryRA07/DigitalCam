@@ -1,0 +1,259 @@
+/* 1.- Tipografia */
+@import url("https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Slab:wght@100..900&display=swap");
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto Slab", serif;
+}
+p,
+span,
+a {
+  font-family: "Hepta Slab";
+}
+
+/* 2.- Estilos básicos */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, rgb(255, 228, 230), rgb(204, 251, 241));
+  padding-top: 60px;
+}
+
+/* Estilos para hacer un slpash screen con palabras */
+/* Estilos del splash screen */
+#splash {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 1s ease;
+
+  /*Codigo agregado para que se desvanezca*/
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s ease, visibility 0s 1s;
+  /* El tiempo de transición puede ajustarse */
+}
+
+.splash-content h1 {
+  font-size: 3rem;
+}
+
+/*Codigo agregado para que se desvanezca*/
+#splash.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease, visibility 0s 1s;
+}
+
+/*00000*/
+
+.splash-content p {
+  font-size: 1.2rem;
+}
+
+/* Ocultar el contenido principal mientras el splash está activo */
+#main-content {
+  display: none;
+}
+
+/* Mostrar el contenido principal una vez que el splash desaparece */
+.show-content #main-content {
+  display: block;
+}
+
+/* 1.Estilos de Encabezado o NavBar */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #154360;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 50px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 3px 8px #000;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo span {
+  color: #eceff1;
+  font-size: 1.2rem;
+  padding-bottom: 5px;
+  text-shadow: 2px 2px 3px #0d0d0d;
+}
+
+.header .logo img {
+  height: 50px;
+  width: 50px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.header .logo img:hover {
+  transition: all 1s ease;
+  transform: scale(1.3);
+}
+
+.header .nav-links {
+  list-style: none;
+}
+
+.header .nav-links li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.header .nav-links li:hover {
+  transition: all 1s ease;
+  transform: scale(1.1);
+}
+
+.header .nav-links a {
+  color: #eceff1;
+  text-decoration: none;
+}
+
+.header .nav-links li a:hover {
+  color: #ffbc0e;
+}
+
+/* 2. Estilos del cuerpo de la página */
+main {
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+/* 2. Estilos del cuerpo de la página */
+main {
+    flex-grow: 1;
+    box-sizing: border-box;
+  }
+  /* 2. Estilos del cuerpo de la página */
+main {
+    flex-grow: 1;
+    box-sizing: border-box;
+  }
+
+  /* 2.2 Estilos de las Cartas */
+  .div-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px;
+    border: 1px solid #a3a2a2;
+    box-shadow: 0px 4px 8px #000;
+    border-radius: 5px;
+  }
+  /*titulo presentacion*/
+.title-pres{
+    margin: 0 40px 20px 40px;
+    border-bottom: 5px solid #000;
+    padding-left: 10px;
+    padding-bottom: 2px;
+    width: 260px;
+    transition: 2s ease;
+}
+.title-pres:hover{
+    transition: width 1s ease;
+    width: 90%;
+    font-size: 1.1rem;
+  }
+.text-presentacion{
+    margin: 0 40px 20px 40px;
+    border-bottom: 5px solid #000;
+    padding-left: 10px;
+    padding-bottom: 2px;
+    text-align: justify;
+    width: 1300px;
+}
+  /* 2.2.2 Estilo del Contenedor de todas las cartas */
+  .container-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 3 columnas */
+    gap: 20px;
+    /* Espacio entre las tarjetas */
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  /* Selector de las Cartas */
+  .card {
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease-out;
+    cursor: default;
+  }
+  
+  .card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+  }
+  
+  /* Imagen de las Cartas */
+  .iframe-img {
+    width: 100%;
+    height: 100%;
+    border: none;
+    object-fit: cover;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 210px;
+  }
+  
+  .card .content-card {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .card .content-card h3 {
+    margin-bottom: 15px;
+    color: #7a7a7a;
+  }
+  
+  .card .content-card p {
+    line-height: 1.8;
+    color: #6a6a6a;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .card .content-card a {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    margin-bottom: 5px;
+  }
+  
+  .card .content-card a:hover {
+    background: #2fb4cc;
+    color: #fff;
+  }
