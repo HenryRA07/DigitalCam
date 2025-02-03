@@ -143,16 +143,6 @@ main {
   flex-grow: 1;
   box-sizing: border-box;
 }
-/* 2. Estilos del cuerpo de la página */
-main {
-  flex-grow: 1;
-  box-sizing: border-box;
-}
-/* 2. Estilos del cuerpo de la página */
-main {
-  flex-grow: 1;
-  box-sizing: border-box;
-}
 
 /* 2.2 Estilos de las Cartas */
 .div-card {
@@ -183,21 +173,6 @@ main {
   padding-bottom: 2px;
   text-align: justify;
   font-size: 0.75rem;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Baloo 2", cursive;
-}
-
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: #efefef;
-  flex-wrap: wrap;
 }
 
 /* 2.2 Estilos de las Cartas */
@@ -271,13 +246,18 @@ body {
   text-align: center;
 }
 
+.card .description h3,
+h4 {
+  padding-bottom: 8px;
+}
+
 .card .description h3 {
   color: #05103a;
 }
 
 .card .description h4 {
   color: #25436c;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
 }
 
 .card .description p {
