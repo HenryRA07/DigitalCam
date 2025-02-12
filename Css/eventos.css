@@ -7,6 +7,7 @@ h2,
 h3 {
   font-family: "Roboto Slab", serif;
 }
+
 p,
 span,
 a {
@@ -19,6 +20,7 @@ a {
   margin: 0;
   padding: 0;
 }
+
 body {
   background: linear-gradient(to right, rgb(255, 228, 230), rgb(204, 251, 241));
 }
@@ -40,7 +42,8 @@ body {
   /*Codigo agregado para que se desvanezca*/
   opacity: 1;
   visibility: visible;
-  transition: opacity 1s ease, visibility 0s 1s; /* El tiempo de transición puede ajustarse */
+  transition: opacity 1s ease, visibility 0s 1s;
+  /* El tiempo de transición puede ajustarse */
 }
 
 .splash-content h1 {
@@ -53,6 +56,7 @@ body {
   visibility: hidden;
   transition: opacity 1s ease, visibility 0s 1s;
 }
+
 /*00000*/
 
 .splash-content p {
@@ -187,9 +191,11 @@ main {
   width: 25%;
   height: auto;
   box-shadow: 0 4px 8px #000;
-  transition: all 400ms ease-out; /*Esto es lo que cambia*/
+  transition: all 400ms ease-out;
+  /*Esto es lo que cambia*/
   text-align: justify;
 }
+
 /*cambio de efecto */
 
 .novelty:hover {
@@ -200,6 +206,7 @@ main {
 .title-novelty {
   margin: 10px 0;
 }
+
 .novelty img {
   width: 100%;
   object-fit: cover;
@@ -265,6 +272,7 @@ main {
   width: 100%;
   box-shadow: 0 4px 8px #000000;
 }
+
 .div-img-news {
   flex: 2;
   max-width: 600px;
@@ -275,6 +283,7 @@ main {
   height: 200px;
   border-radius: 8px;
 }
+
 .img-events {
   width: 100%;
   height: 300px;
@@ -321,6 +330,7 @@ footer {
   text-align: center;
   padding-right: 40px;
 }
+
 .search-section button {
   padding: 5px 10px;
   border: none;
@@ -402,4 +412,12 @@ footer {
   display: flex;
   gap: 20px;
   margin: 25px 0;
+}
+
+@media screen and (max-width: 700px) {
+
+  .novelty {
+    width: 90%;
+    margin: 10px;
+  }
 }
