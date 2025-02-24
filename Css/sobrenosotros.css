@@ -156,13 +156,6 @@ main {
 }
 
 /*titulo presentacion*/
-.title-pres {
-  margin: 0 40px 10px 40px;
-  border-bottom: 5px solid #000;
-  padding-left: 10px;
-  padding-bottom: 2px;
-  width: 260px;
-}
 
 .text-presentacion {
   margin: 0 40px 20px 0px;
@@ -175,6 +168,11 @@ main {
 
 /* 3. Estilos para la seccion de presentacion del colegio  */
 
+.presentacion-colegio {
+  width: 100%;
+  height: auto;
+  padding-bottom: 530px;
+}
 
 .Slogan {
   text-align: center;
@@ -189,15 +187,17 @@ main {
 .content-section {
   float: left;
   width: 49%;
-  padding: 30px 0;
+  padding: 10px 0;
 }
 
 .content-section h2 {
   font-size: 1.5rem;
+  padding-left: 40px;
 }
 
 .content-section p {
-  padding: 10px;
+  padding-left: 50px;
+  margin: 10px;
   font-size: 1.1rem;
   line-height: 1.5;
   color: #333;
@@ -228,34 +228,34 @@ main {
   height: 100px;
 }
 
-.box img {
+.item_img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.box:nth-child(1) {
+.item_img:nth-child(1) {
   grid-column-start: span 3;
 }
 
-.box:nth-child(3) {
+.item_img:nth-child(3) {
   grid-column-start: span 2;
   height: 200px;
 }
 
-.box:nth-child(4) {
+.item_img:nth-child(4) {
   padding: 10px;
   /*  border: solid 1px #ffbb00; */
   background-color: #ffbb00;
 }
 
-.box:nth-child(5) {
+.item_img:nth-child(5) {
   padding: 10px;
   /* border: solid 1px #333; */
   background-color: #052453;
 }
 
-.box:nth-child(6) {
+.item_img:nth-child(6) {
   padding: 10px;
   /*  border: solid 1px #333; */
   background-color: #740f0f;
