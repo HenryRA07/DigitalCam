@@ -7,6 +7,7 @@ h2,
 h3 {
   font-family: "Roboto Slab", serif;
 }
+
 p,
 span,
 a {
@@ -19,6 +20,7 @@ a {
   margin: 0;
   padding: 0;
 }
+
 body {
   background: linear-gradient(to right, rgb(255, 228, 230), rgb(204, 251, 241));
 }
@@ -40,7 +42,8 @@ body {
   /*Codigo agregado para que se desvanezca*/
   opacity: 1;
   visibility: visible;
-  transition: opacity 1s ease, visibility 0s 1s; /* El tiempo de transición puede ajustarse */
+  transition: opacity 1s ease, visibility 0s 1s;
+  /* El tiempo de transición puede ajustarse */
 }
 
 .splash-content h1 {
@@ -53,6 +56,7 @@ body {
   visibility: hidden;
   transition: opacity 1s ease, visibility 0s 1s;
 }
+
 /*00000*/
 
 .splash-content p {
@@ -76,7 +80,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #154360;
+  background-color: #102d47;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -136,6 +140,7 @@ body {
 main {
   margin-top: 70px;
 }
+
 /*Estilo de la Primera Sección*/
 .first-section {
   background-color: #fff;
@@ -235,6 +240,7 @@ main {
   flex-direction: column;
   flex-wrap: nowrap;
 }
+
 .images {
   display: flex;
   flex-direction: row;
@@ -250,6 +256,7 @@ main {
   margin-bottom: 10px;
   border: 1px solid #848484;
 }
+
 .image-item {
   width: 0px;
   flex-grow: 1;
@@ -257,12 +264,14 @@ main {
   opacity: 0.8;
   transition: 0.5s ease;
 }
+
 .image-item:hover {
   cursor: crosshair;
   width: 200px;
   opacity: 1;
   filter: contrast(120%);
 }
+
 .desc {
   font-size: 0.7rem;
   color: #696969;
@@ -276,12 +285,14 @@ main {
   border-radius: 10px;
   box-shadow: 0 4px 8px #000;
 }
+
 .galeria {
   display: flex;
   width: 60%;
   height: 430px;
   margin: auto;
 }
+
 .galeria img {
   width: 0px;
   flex-grow: 1;
@@ -318,9 +329,11 @@ main {
   box-shadow: 0 4px 8px #949494;
   transition: 1s ease;
 }
+
 .news-items h3 {
   margin-bottom: 10px;
 }
+
 .news-items p {
   text-align: justify;
   margin: 5px;
@@ -346,6 +359,7 @@ main {
   flex-grow: 1;
   margin-left: 0px;
 }
+
 .desc-news h3 {
   font-size: 1.2rem;
 }
@@ -362,6 +376,7 @@ main {
   .first-section {
     flex-direction: column;
   }
+
   .news {
     display: flex;
     flex-direction: column;
@@ -394,6 +409,7 @@ footer {
   text-align: center;
   padding-right: 40px;
 }
+
 .search-section button {
   padding: 5px 10px;
   border: none;
@@ -476,4 +492,5 @@ footer {
   gap: 20px;
   margin: 25px 0;
 }
+
 /* Fin de codigo de prueba*/
